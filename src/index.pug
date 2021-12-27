@@ -1,0 +1,13 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Главная страница сайта'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+
+block header
+    include ./components/header/header
+block content
+    //- Подключать тут
+block footer  
+    include ./components/footer/footer

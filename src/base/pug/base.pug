@@ -1,0 +1,14 @@
+include ../../mixins/pug/svg-icon
+block variables
+    - var baseDir = './';
+
+doctype html
+html(lang="ru-RU")
+    include ./head
+    body
+        .wrapper
+            block header
+            main.main
+                block content
+            block footer
+        include ./scripts
