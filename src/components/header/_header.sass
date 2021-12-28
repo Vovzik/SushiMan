@@ -1,3 +1,350 @@
-h1
-    font-family: $gt
-    font-weight: 900
+body.open 
+    overflow: hidden
+ 
+.header 
+    &__top-inner  
+        display: flex
+        align-items: center
+        min-height: 62px
+        margin: 26px 0px 32px 0px
+    &__logo
+        margin-right: 26px
+    span 
+        font-weight: normal
+        font-size: 12px
+        line-height: 20px
+        color: #201D1E
+    &__role 
+        width: 180px
+        position: relative
+        padding-left: 26px
+        margin-right: 48px
+        &:before 
+            content: ''
+            position: absolute
+            top: -7px
+            left: 0px
+            border-right: 1px solid #EDEDED
+            height: 54px
+    &__top
+        ul 
+            display: flex
+            align-items: center
+            margin-right: 48px
+            a
+                font-weight: normal
+                font-size: 12px
+                line-height: 20px
+                color: #201D1E
+                transition: all 0.4s ease
+                &:hover 
+                    color: $hover
+        li:not(:last-child) 
+            margin-right: 15px
+    strong
+        font-size: 12px
+        line-height: 20px
+        color: #201D1E
+        margin-right: 48px
+        span
+            display: block
+    &__instagram
+        font-weight: 600
+        font-size: 12px
+        line-height: 20px
+        color: #201D1E
+        display: flex
+        align-items: center
+        margin-right: 48px
+        transition: all 0.4s ease
+        &:hover 
+            color: $hover
+        svg 
+            margin-right: 7px
+            fill: #EA690C
+            width: 18px
+            height: 18px
+    &__phone
+        font-weight: bold
+        font-size: 26px
+        line-height: 20px
+        color: #201D1E
+        display: flex
+        align-items: center
+        margin-right: 30px
+    &__elipse
+        margin-right: 15px  
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        background: linear-gradient(261.59deg, #f1650047 0%, #ff990038 100%)
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+        svg 
+            width: 23px
+            height: 23px
+            fill: #EA690C
+    &__basket
+        padding: 10px 18px
+        background: linear-gradient(261.59deg, #F16500 0%, #FF9900 100%)
+        border-radius: 40px
+        display: flex
+        align-items: center
+        span 
+            font-size: 15px
+            line-height: 20px
+            color: #FFFFFF
+            font-weight: bold
+    &__cards
+        padding-right: 13px
+        position: relative
+        margin-right: 13px
+        display: flex
+        align-items: center
+        svg
+            margin-right: 7px
+            width: 24px
+            height: 24px
+            fill: #fff
+        &:before 
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            height: 100%
+            opacity: 0.2
+            border-right: 1px solid #FFFFFF
+    &__content
+        ul
+            display: flex
+            align-items: center
+        li 
+            position: relative
+            display: flex
+            align-items: center  
+            &:not(:last-child)
+                padding-right: 29px
+                margin-right: 23px
+            &:not(:last-child):before 
+                content: ''
+                position: absolute
+                right: 0px
+                width: 6px
+                height: 6px
+                border-radius: 50%
+                border: 2px solid #EA690C
+        a
+            font-weight: 600
+            font-size: 15px
+            line-height: 20px
+            color: #201D1E
+            transition: all 0.4s ease
+            &:hover 
+               color: $hover
+          
+.headermodail
+    position: relative
+    display: none
+    &__inner
+         display: flex
+         align-items: center
+         min-height: 46px
+         margin: 15px 0px
+         justify-content: space-between
+    &__logo
+        margin-right: 49px
+    &__phone
+        width: 34px
+        height: 34px
+        margin-right: 15px
+        svg 
+             width: 34px
+             height: 34px
+    &__basket
+        width: 64px
+        height: 40px
+        flex: 0 0 auto
+        border-right: 1px solid #EDEDED
+        border-left: 1px solid #EDEDED
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        margin-right: 17px
+        svg 
+            width: 34px
+            height: 34px
+        span
+            position: absolute
+            bottom: 0px        
+            display: block
+            width: 43px
+            min-height: 15px
+            background: linear-gradient(261.59deg, #F16500 0%, #FF9900 100%)
+            border-radius: 40px
+            font-weight: bold
+            font-size: 10.28px
+            color: #FFFFFF
+            display: flex
+            align-items: center
+            justify-content: center
+    &__burger 
+        width: 32px
+        height: 32px
+        cursor: pointer  
+    &__burger-polosa1,
+    &__burger-polosa,
+    &__burger-polosa3 
+          background: #201D1E
+          height: 4px
+          width: 100%
+          margin-bottom: 9px
+          transition: transform 0.6s ease     
+    .js__header-burgerpolosa1.open 
+         transform: rotate(45deg)
+         position: relative
+         top: 15px  
+    .js__header-burgerpolosa.open 
+         opacity: 0   
+    .js__header-burgerpolosa3.open 
+         transform: rotate(-45deg)
+         position: relative
+         bottom: 11px        
+    &__burger-polosa3 
+          margin-bottom: 0px
+    .js__menu-headermodail
+       opacity: 0
+       visibility: hidden
+       transition: all 0.4s ease
+       position: absolute
+       top: 76px
+       background: #fff
+    .js__menu-headermodail.open
+       opacity: 1
+       visibility: visible
+    &__menu-open
+        padding: 15px 15px 25px 15px
+        border-top: 1px solid #EDEDED
+        width: 100%
+        left: 0px
+        z-index: 5
+        overflow: auto
+        height: calc(100vh - 72px)
+    ul 
+        padding-bottom: 15px
+        border-bottom: 1px solid #EDEDED
+        margin-bottom: 25px
+    li a 
+        font-weight: normal
+        font-size: 24px
+        line-height: 50px
+        color: #201D1E
+    strong
+        display: block
+        font-size: 18px
+        line-height: 20px
+        color: #201D1E
+        margin-bottom: 20px
+        span 
+            font-weight: 400
+    &__instagram
+        display: inline-flex
+        align-items: center
+        font-size: 18px
+        line-height: 20px
+        color: #201D1E
+        font-weight: 600
+        margin-bottom: 23px
+        svg 
+            margin-right: 8px
+            width: 24px
+            height: 24px
+            fill: #EA690C
+    &__phonebottom
+        display: inline-flex
+        align-items: center
+        font-weight: bold
+        font-size: 26px
+        line-height: 20px
+        color: #201D1E
+        flex: 0 0 auto
+        span 
+            display: block
+            margin-right: 15px
+            width: 45px
+            height: 45px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            background: linear-gradient(261.59deg, #f1650047 0%, #ff990038 100%)
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+        svg 
+            fill: #EA690C
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: 600
+        font-size: 15px
+        line-height: 20px
+        color: #EA690C
+        position: relative
+        z-index: 4
+        margin-top: 42px
+        .headermodail__burger 
+            position: static
+            width: 20px
+            height: 20px
+            margin-right: 9px
+        .headermodail__burger-polosa1, 
+        .headermodail__burger-polosa, 
+        .headermodail__burger-polosa3
+            height: 4px
+            margin-bottom: 4px
+            background-color: #EA690C
+        .js__header-burgerpolosa1.open 
+            top: 8px
+        .js__header-burgerpolosa3.open 
+            bottom: 8px
+    &__link-open
+        background: #FFFFFF
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+        border-radius: 20px
+        width: auto
+        width: calc(100vw - 30px)
+        left: 50%
+        transform: translate(-50%, 0%)
+        z-index: 2
+        padding-top: 70px
+        overflow: hidden
+        min-height: 636px
+        padding-bottom: 30px
+    &__items
+        margin-right: -2px
+        border-top: 1px solid #EDEDED
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(165px, 1fr))
+    &__item
+        display: flex
+        align-items: center
+        flex-direction: column
+        border-right: 1px solid #EDEDED
+        border-bottom: 1px solid #EDEDED
+        padding: 17px
+        img
+            margin-bottom: 10px
+        strong 
+            font-weight: 600
+            font-size: 15px
+            line-height: 16px
+            color: #201D1E
+            margin: 0px
+        span 
+            font-weight: 400
+            font-size: 12px
+            line-height: 16px
+            color: #201D1E
+      
