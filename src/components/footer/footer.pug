@@ -1,2 +1,51 @@
 footer.footer 
-    h1 Подвал сайта
+    .container 
+        .footer__inner 
+            a.footer__logo(href="/")
+                img(src="images/footer__logo.webp", alt="alt")
+            .footer__menu 
+              ul  
+                  li
+                      a(href="#") Холодные роллы
+                  li
+                      a(href="#") Запеченные роллы
+                  li
+                      a(href="#") Жареные роллы
+                  li
+                      a(href="#") Сеты
+              ul   
+                  li
+                      a(href="#") Пицца
+                  li
+                      a(href="#") Закуски
+                  li
+                      a(href="#") Соусы
+            .footer__information 
+              ul  
+                  li
+                      a(href="#") Акции
+                  li
+                      a(href="#") О нас
+                  li
+                      a(href="#") Доставка
+                  li
+                      a(href="#") Контакты
+            .footer__contacts 
+                 div 
+                   .footer__phone 
+                     +icon('header__phone')
+                   span Телефон для заявок:
+                   strong 577-755 
+                 div 
+                   .footer__phone 
+                     +icon('footer__time')
+                   span Прием заявок:
+                   strong с 11:00 до 22:30
+    .footer__bottom 
+     .container 
+       .footer__bottom-inner
+         span © 2021 «SushiMan» Все права защищены
+         span 
+           |Разработка сайта — 
+           a(href="#")  
+             img(src="images/footer__forestWeb.webp", alt="alt")

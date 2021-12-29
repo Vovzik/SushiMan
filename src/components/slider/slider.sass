@@ -1,0 +1,35 @@
+.slider  
+   &__inner
+       display: flex
+       max-width: 1841px
+       margin: 0 auto
+       padding: 0px 15px
+   &__margin:not(:last-child) 
+      margin-right: 20px
+   &__swiper-container
+        overflow: hidden
+        width: 940px
+        padding-bottom: 30px
+        position: relative
+   &__swiper-container.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+         margin-right: 7px
+         margin-left: 7px
+   &__swiper-pagination
+      position: absolute
+      bottom: 0px
+      display: flex
+      align-items: center
+      justify-content: center
+      .swiper-pagination-bullet
+         width: 10px
+         height: 10px
+         background: #201D1E
+         opacity: 0.1
+         transition: all 0.4 ease
+      .swiper-pagination-bullet.swiper-pagination-bullet-active
+          opacity: 1
+      
+
+    
+            
+        

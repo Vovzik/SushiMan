@@ -12,6 +12,13 @@
 @media (max-width:1350px)
   .header__role 
      display: none
+  .footer__menu,
+  .footer__information,
+  .footer__logo
+     margin-right: 30px
+  .footer__menu
+     width: 288px
+     flex: 0 0 auto
 
 @media (max-width:1150px) 
    .header__top ul 
@@ -21,9 +28,74 @@
    .header__phone
       flex: 0 0 auto
 
+@media (max-width: 1024px) 
+   .footer__inner
+      flex-wrap: wrap
+      justify-content: space-between
+   .footer__menu,
+   .footer__information
+      margin-right: 0px
+   .footer__information
+      border: none
+   .footer__logo
+      margin-bottom: 10px
+   .footer__contacts
+      margin-top: 10px
+      width: 100%
+
 @media (max-width: 991px) 
    .header 
       display: none
    .headermodail
       display: block
-
+   .footer__information 
+      width: 144px
+   .slider__inner
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-bottom: 20px
+   .slider__margin.order1
+      order: 2
+   .slider__margin.order
+      order: 2
+   .slider__margin:not(:last-child)
+      margin-right: 0px
+   .slider__swiper-container
+      width: 100%
+      margin-bottom: 20px
+      .swiper-slide
+         a,
+         img
+            width: 100%
+   .slider__margin.order1,
+   .slider__margin.order
+      width: 48%
+      margin-bottom: 10px
+      img
+         width: 100%
+@media (max-width: 500px) 
+   .footer__menu, 
+   .footer__information
+      display: none
+   .footer__logo
+      margin-right: 0px
+      margin-bottom: 24px
+      width: 171px
+   .footer__inner
+      align-items: center
+      flex-direction: column
+   .footer__bottom-inner
+      flex-direction: column
+      justify-content: center
+      min-height: 100px
+      span:not(:last-child) 
+         margin-bottom: 8px
+       
+   .footer__contacts
+      margin-top: 0px
+      width: 239px
+   .footer 
+      padding-top: 36px
+   .footer__bottom
+      margin-top: 28px
+   

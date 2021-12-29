@@ -1,0 +1,96 @@
+.footer 
+    background: #201D1E
+    padding-top: 116px
+    &__bottom
+       margin-top: 45px
+    &__inner
+       display: flex
+       align-items: center
+    &__logo
+       margin-right: 103px
+    &__menu
+       width: 312px
+       display: flex
+       justify-content: space-between
+       margin-right: 103px
+    ul 
+       padding-left: 22px
+       a 
+         font-weight: 600
+         font-size: 15px
+         line-height: 34px
+         color: #FFFFFF
+         transition: all 0.4s ease
+         &:hover 
+            color: $hover
+    li 
+       position: relative
+       &:before 
+          content: ''
+          position: absolute
+          top: 14px
+          left: -22px
+          width: 6px
+          height: 6px
+          border-radius: 50%
+          background: linear-gradient(261.59deg, #F16500 0%, #FF9900 100%)
+    &__information
+       width: 298px
+       height: 160px
+       display: flex
+       align-items: center
+       justify-content: center
+       border-right: 1px solid #ffffff1f
+       border-left: 1px solid #ffffff1f
+       margin-right: 103px
+    &__contacts
+       width: 239px
+       flex: 0 0 auto
+       span 
+          font-weight: normal
+          font-size: 12px
+          line-height: 24px
+          color: #A0979A
+          display: block
+       strong
+          font-weight: 600
+          font-size: 22px
+          line-height: 34px
+          color: #FFFFFF
+          display: block
+       svg 
+          width: 23px
+          height: 23px
+          fill: #EA690C
+    &__phone
+       float: left
+       display: flex
+       align-items: center
+       justify-content: center
+       border-radius: 50%
+       width: 44px
+       height: 44px
+       border: 1px solid #ffffff1f
+       margin-right: 15px
+       margin-top: 8px
+    &__contacts > div:not(:last-child)
+       margin-bottom: 17px
+    &__bottom
+       background: #161414
+    &__bottom-inner 
+       display: flex
+       min-height: 80px
+       justify-content: space-between
+       align-items: center
+       span 
+          font-weight: normal
+          font-size: 12px
+          line-height: 20px
+          color: #FFFFFF
+          display: flex
+          align-items: center
+       svg 
+          width: 86px
+          height: 18px
+       a
+          margin-left: 5px

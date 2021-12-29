@@ -2,6 +2,7 @@ body.open
     overflow: hidden
  
 .header 
+    padding-bottom: 30px
     &__top-inner  
         display: flex
         align-items: center
@@ -92,6 +93,9 @@ body.open
         border-radius: 40px
         display: flex
         align-items: center
+        transition: background 0.4s ease
+        &:hover 
+            background: linear-gradient(261.59deg, #F88A3B 0%, #FFB950 100%)
         span 
             font-size: 15px
             line-height: 20px
@@ -147,6 +151,7 @@ body.open
 .headermodail
     position: relative
     display: none
+    padding-bottom: 15px
     &__inner
          display: flex
          align-items: center
