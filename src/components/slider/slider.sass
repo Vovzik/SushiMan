@@ -28,8 +28,41 @@
          transition: all 0.4 ease
       .swiper-pagination-bullet.swiper-pagination-bullet-active
           opacity: 1
-      
-
+   .slidermenu__swiper-container
+      margin-bottom: 130px
+      margin-top: 30px
+      overflow: hidden
+   .slidermenu__swiper-container .swiper-wrapper
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+   .slidermenu__swiper-container .swiper-slide 
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      padding: 20px
+      background: #FFFFFF
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+      border-radius: 20px
+      min-height: 170px
+      transition: all 0.4s ease
+      &:hover 
+         border: 1px solid #f1650047
+         box-shadow: 0px 4px 30px rgba(234, 105, 12, 0.1)
+      img
+         margin-bottom: 9px
+      strong
+         font-weight: 600
+         font-size: 18px
+         line-height: 20px
+         color: #201D1E
+      span 
+         font-weight: 400
+         font-size: 15px
+         line-height: 20px
+         color: #201D1E
     
             
         

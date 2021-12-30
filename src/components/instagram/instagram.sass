@@ -1,0 +1,62 @@
+.wrapper 
+   overflow: hidden
+.instagram 
+   margin-bottom: 137px
+   &__inner 
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-column-gap: 25px
+      position: relative
+      img:not(:last-child)
+         margin-right: 25px
+   &__epileps   
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      border-radius: 50%
+      background: #FFFFFF
+      box-shadow: 0px 14px 124px -20px rgba(0, 0, 0, 0.4)
+      width: 350px
+      height: 350px
+      strong
+         font-weight: 600
+         font-size: 36px
+         line-height: 36px
+         color: #201D1E
+         display: block
+         margin-bottom: 18px
+         width: 200px
+         text-align: center
+         position: relative
+         z-index: 2
+      a
+         display: flex
+         align-items: center
+         justify-content: center
+         border-radius: 40px
+         border: 2px solid #F16500
+         width: 200px
+         height: 55px
+         font-weight: bold
+         font-size: 15px
+         line-height: 22px
+         color: #F16500
+         position: relative
+         z-index: 2
+         &:hover 
+            background:  linear-gradient(261.59deg, #F88A3B 0%, #FFB950 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+         svg 
+            margin-right: 6px 
+            width: 20px
+            height: 20px
+         &:hover  svg
+               fill: #F88A3B
+   &__ellipse
+      position: absolute

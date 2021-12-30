@@ -1,3 +1,8 @@
 import './header/header'
 import './slider/slider'
+import './tovar/tovar'
+import './instagram/instagram'
+import './news/news'
+import './about/about'
+import './address/address'
 import './footer/footer'

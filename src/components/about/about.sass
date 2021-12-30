@@ -1,0 +1,63 @@
+.about
+   margin-bottom: 130px
+   &__inner
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(470px, 1fr))
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+      position: relative
+   &__elipse 
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 500px
+      height: 500px
+      border-radius: 50%
+      background: #FFFFFF
+      box-shadow: 0px 14px 124px -20px #000000
+      img
+         position: absolute
+      strong,
+      p,
+      a
+         position: relative
+         z-index: 2
+      strong
+         display: block
+         font-weight: 600
+         font-size: 64px
+         color: #201D1E
+         margin-bottom: 13px
+      p 
+         max-width: 350px
+         font-weight: normal
+         font-size: 16px
+         line-height: 26px
+         color: #201D1E
+         text-align: center
+      a
+         width: 250px
+         height: 55px
+         display: flex
+         align-items: center
+         justify-content: center
+         background: linear-gradient(261.59deg, #F16500 0%, #FF9900 100%)
+         border-radius: 40px
+         font-weight: bold
+         font-size: 15px
+         line-height: 22px
+         color: #FFFFFF
+         cursor: pointer
+         margin-top: 53px
+         transition: all 0.4s ease
+         &:hover 
+            background: linear-gradient(261.59deg, #F88A3B 0%, #FFB950 100%)
+         svg 
+            margin-left: 8px
+            width: 24px
+            height: 24px

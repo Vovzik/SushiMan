@@ -21,3 +21,18 @@ const slider__swiper = new Swiper('.slider__swiper-container', {
   } */
 
 });
+
+
+if(document.querySelector('body').clientWidth <= 768) {
+  const slidermenu = new Swiper('.slidermenu__swiper-container', {
+    // Optional parameters
+    slidesPerView: 3.3,
+    spaceBetween: 10,
+    autoplay: true,
+  });
+
+  console.log('true');
+  
+} else {
+  console.log('false');
+}
