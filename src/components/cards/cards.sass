@@ -1,0 +1,171 @@
+.cards
+   &__tovar 
+      display: flex
+      margin-bottom: 80px
+      span 
+         font-weight: normal
+         font-size: 14px
+         line-height: 22px
+         color: #A0979A
+         display: flex
+         align-items: center
+      span > span 
+         margin-left: 10px
+   &__tovar > img 
+      position: relative
+      z-index: 2
+   &__tovar-filter
+      padding: 52px 50px 28px 50px
+      background: #FFFFFF
+      border-top: 1px dashed #A0979A
+      border-right: 1px dashed #A0979A
+      border-radius: 0px 20px 20px 0px
+      width: 720px
+      position: relative
+   &__tovar-filter > strong 
+      display: block
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #201D1E
+      margin-bottom: 7px
+      margin-top: 20px
+   &__border
+      border-top: 2px dashed #EDEDED
+      margin-top: 20px
+   &__checkbox-box
+      display: none
+   &__checkbox-title 
+     cursor: pointer
+     display: flex
+     align-items: center
+     justify-content: center
+     flex-direction: column
+     padding: 10px 20px
+     background: #FFFFFF
+     border: 1px dashed #A0979A
+     border-radius: 20px
+     transition: all 0.4s ease
+     font-weight: normal
+     font-size: 14px
+     line-height: 22px
+     color: #A0979A
+     strong
+        color: #201D1E
+        font-weight: normal
+     &:hover 
+         border-color: #F88A3B
+   &__checkbox-box:checked + &__checkbox-title 
+       background: #F9F9F9
+       border: 1px solid #EDEDED
+       font-weight: 600
+       color: #201D1E
+       strong
+          font-weight: 600
+   &__testo
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr))
+      grid-column-gap: 10px
+      grid-row-gap: 10px
+      max-width: 410px
+   &__price
+      display: flex
+      align-items: center
+      position: relative
+      z-index: 2
+   &__inner
+      display: flex
+      align-items: flex-end
+      margin-top: 62px
+      justify-content: space-between
+      strong
+         font-weight: 600
+         font-size: 42px
+         line-height: 22px
+         color: #201D1E
+         margin-right: 24px
+      span 
+         position: relative
+         font-weight: normal
+         font-size: 36px
+         line-height: 22px
+         color: #A0979A
+         &:before 
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            border-top: 2px solid #E32F45
+            width: 110px
+      a
+         display: flex
+         align-items: center
+         font-weight: bold
+         font-size: 18px
+         line-height: 20px
+         color: #FFFFFF
+         position: relative
+         z-index: 2
+         margin-top: 30px
+         pointer-events: none
+         svg
+            margin-right: 13px   
+            width: 32px
+            height: 32px
+   &__polosa
+      position: absolute
+      bottom: 0px
+      right: -1px
+      cursor: pointer
+      max-width: none
+      width: 841px
+      path 
+         transition: 0.4s
+      &:hover path 
+         fill: #F88A3B
+   &__swiper-container
+      overflow: hidden
+   .tovar__items
+      display: flex
+      grid-gap: 0px
+      margin-bottom: 0px
+      margin-top: 36px
+   &__swiper-inner
+      position: relative
+      margin-bottom: 130px
+   &__swiper-button-prev,
+   &__swiper-button-next
+      position: absolute
+      top: 50%
+      transform: translate(0%, -50%)
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 52px
+      height: 52px
+      border-radius: 50%
+      background: #FFFFFF
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+      z-index: 2
+      cursor: pointer
+      svg 
+         width: 7px
+         height: 14px
+         fill: #EA690C
+   &__swiper-button-next
+      right: -25px
+   &__swiper-button-prev
+      left: -25px
+   .tovar__text svg path
+      fill: #F16500
+      transition: all 0.4s ease
+   .tovar__text svg:hover path
+      fill: #F88A3B
+   &__border-top
+      border-top: 1px solid #EDEDED
+      margin-bottom: 31px
+
+
+
+      

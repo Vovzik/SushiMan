@@ -1,4 +1,17 @@
 @media (max-width:1500px)  
+   .cards__tovar
+      border-radius: 20px 0px 0px 20px
+      overflow: hidden
+   .cards__tovar > img
+      width: 500px
+      object-fit: cover
+   .cards__tovar-filter
+      flex-grow: 1
+   .address__info
+      width: 1100px
+      flex-wrap: wrap
+   .address__info-item
+      width: 358px
    .header__top-inner  
       justify-content: space-between
    .header__logo,
@@ -10,6 +23,12 @@
       margin-right: 20px
 
 @media (max-width:1350px)
+  .cards__price
+     flex-direction: column
+     align-items: flex-start
+     strong
+        margin-right: 0px
+        margin-bottom: 20px
   .header__role 
      display: none
   .footer__menu,
@@ -21,6 +40,12 @@
      flex: 0 0 auto
 
 @media (max-width:1150px) 
+   .cards__polosa 
+      width: 794px
+   .address__info
+      width: 100%
+      position: static
+      transform: translate(0%, 0%)
    .header__top ul 
       flex-wrap: wrap
    .header strong,
@@ -29,6 +54,11 @@
       flex: 0 0 auto
 
 @media (max-width: 1024px) 
+   .cards__tovar-filter
+      padding: 20px
+   .cards__polosa 
+      width: 762px
+
    .news__inner
       grid-template-columns: 1fr
       img
@@ -57,6 +87,14 @@
       width: 100%
 
 @media (max-width: 991px) 
+   .cards__tovar > img 
+    width: 300px
+   .address__info
+      justify-content: start
+   .address__info-item
+      padding: 0px 20px
+      &:before 
+         display: none
    .about__inner 
       grid-template-columns: 1fr
    .about__inner > img 
@@ -94,6 +132,24 @@
       img
          width: 100%
 @media (max-width: 768px) 
+   .cards__tovar
+      flex-direction: column
+   .cards__tovar > img
+      width: 100%
+   .cards__tovar
+      border-radius: 20px
+   .cards__tovar-filter
+      width: 100%
+      border: none
+   .catalog__filter
+      flex-wrap: wrap
+   .catalog__menu
+      grid-template-columns: repeat(7, 185px)
+      overflow-x: scroll
+      height: 98px
+   .catalog__menu-item
+      min-height: auto
+      height: 82px
    .tovar__items
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
       grid-gap: 10px
@@ -131,6 +187,26 @@
       grid-gap: 0px
    
 @media (max-width: 500px) 
+   .cards__swiper-button-prev, 
+   .cards__swiper-button-next
+      width: 40px
+      height: 40px
+
+   .cards__inner 
+      a
+         font-size: 0px
+   .cards__polosa 
+      width: 593px
+   .cards__tovar
+      margin-bottom: 50px
+
+
+   .tovar__items a .tovar__shearch
+      width: 118px
+   .address__info
+      display: none
+   .address__map
+      height: 500px
    .title h1
       margin-bottom: 20px
    .about__inner 

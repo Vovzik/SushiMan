@@ -1,6 +1,57 @@
-section.tovar.title
-   .container 
-      h1 Хиты, скидки, новинки
+.catalog.title
+   .container
+      include ../breadcrumbs/breadcrumbs
+      .catalog__menu 
+         a(href="#" tabindex="0" data-scene="preparation1").catalog__menu-item.js__catalog-click1.app-actions1.hidden 
+            img(src="images/catalog.webp" alt="alt")
+            img.catalog__border(src="images/catalog__border.webp" alt="alt")
+            strong 
+               |Холодные 
+               span роллы
+         a(href="#" tabindex="0" data-scene="preparation1").catalog__menu-item.js__catalog-click1.app-actions1.hidden 
+            img(src="images/catalog2.webp" alt="alt")
+            img.catalog__border(src="images/catalog__border.webp" alt="alt")
+            strong 
+               |Запеченные
+               span роллы
+         a(href="#" tabindex="0" data-scene="preparation1").catalog__menu-item.js__catalog-click1.app-actions1.hidden 
+            img(src="images/catalog3.webp" alt="alt")
+            img.catalog__border(src="images/catalog__border.webp" alt="alt")
+            strong 
+               |Жареные
+               span роллы
+         a(href="#" tabindex="0" data-scene="preparation1").catalog__menu-item.js__catalog-click1.app-actions1.hidden 
+            img(src="images/catalog4.webp" alt="alt")
+            img.catalog__border(src="images/catalog__border.webp" alt="alt")
+            strong 
+               |Сеты 
+         a(href="#" tabindex="0" data-scene="preparation1").catalog__menu-item.js__catalog-click1.app-actions1.hidden 
+            img(src="images/catalog5.webp" alt="alt")
+            img.catalog__border(src="images/catalog__border.webp" alt="alt")
+            strong 
+               |Пицца 
+         a(href="#" tabindex="0" data-scene="preparation1").catalog__menu-item.js__catalog-click1.app-actions1.hidden 
+            img(src="images/catalog6.webp" alt="alt")
+            img.catalog__border(src="images/catalog__border.webp" alt="alt")
+            strong 
+               |Закуски 
+         a(href="#" tabindex="0" data-scene="preparation1").catalog__menu-item.js__catalog-click1.app-actions1.hidden 
+            img(src="images/catalog7.webp" alt="alt")
+            img.catalog__border(src="images/catalog__border.webp" alt="alt")
+            strong 
+               |Соусы 
+      h2 Холодные роллы
+      .catalog__filter 
+        span  
+          +icon('catalog__filter')  
+          |Сортировать по:
+        a.js__catalog-click.app-actions.hidden(href="#", data-scene="preparation")  популярности     
+        a.js__catalog-click.app-actions.hidden(href="#", data-scene="preparation") цене (от дешевых)
+        a.js__catalog-click.app-actions.hidden(href="#", data-scene="preparation") цене (от дорогих)
+        a.js__catalog-click.app-actions.hidden(href="#", data-scene="preparation") акции
+        a.js__catalog-click.app-actions.hidden(href="#", data-scene="preparation") новизне
+.tovar
+   .container
       .tovar__items 
          .tovar__item 
             a(href="#")
@@ -149,3 +200,6 @@ section.tovar.title
       a(href="#").tovar__btn
          +icon('tovar__refresh')
          |Показать еще
+
+
+      
