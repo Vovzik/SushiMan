@@ -1,0 +1,224 @@
+.basket 
+   h3 
+       margin-bottom: 30px
+       display: flex
+       align-items: center
+       justify-content: space-between
+       button
+          border: none
+          background: transparent
+          font-weight: 500
+          font-size: 14px
+          line-height: 18px
+          color: #A0979A
+          display: flex
+          align-items: center
+          cursor: pointer
+          margin-left: 20px
+          svg
+             margin-right: 10px
+             width: 17px
+             height: 20px
+   &__tovar 
+      width: 822px
+   &__blog
+      display: flex
+      align-items: flex-start
+      background: #FFFFFF
+      box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.1)
+      border-radius: 20px
+      padding: 20px 30px 20px 20px
+      position: relative
+      &:not(:last-child) 
+         margin-bottom: 20px
+   &__text
+      margin-left: 20px
+      flex-grow: 1
+      a
+         font-weight: 600
+         font-size: 16px
+         line-height: 22px
+         color: #201D1E
+         margin-bottom: 8px
+         display: block
+         transition: all 0.4s ease
+         &:hover 
+            color: #A0979A
+      span 
+         font-weight: normal
+         font-size: 14px
+         line-height: 22px
+         color: #A0979A
+      span > span 
+         margin-left: 11px
+   &__border
+      display: flex
+      justify-content: space-between
+      border-top: 5px dotted #EDEDED
+      margin-top: 14px
+   &__number
+      display: flex
+      align-items: center
+      margin-top: 21px
+      span 
+         margin-right: 12px
+   &__value
+      width: 98px
+      height: 32px
+      padding: 6px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      background: #FFFFFF
+      border: 1px solid #EA690C
+      border-radius: 30px
+      button,
+      input
+         border: none
+         background: transparent
+         outline: 0px
+      button
+         width: 20px
+         height: 20px
+         border-radius: 50%
+         display: flex
+         align-items: center
+         justify-content: center
+         background: #ea690c6b
+         flex: 0 0 auto
+         cursor: pointer
+         transition: all 0.4s ease
+         &:hover 
+               background-color: #ea690ca6
+      input
+         width: 37px
+         text-align: center
+         font-weight: 600
+         font-size: 14px
+         line-height: 22px
+         color: #201D1E
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button 
+         -webkit-appearance: none
+         margin: 0
+   &__price
+      display: flex
+      align-items: center
+      margin-top: 26px
+      span 
+         margin-right: 30px
+         position: relative
+         font-weight: normal
+         font-size: 18px
+         line-height: 22px
+         color: #A0979A
+         &:before 
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            border-top: 1px solid #E32F45
+            width: 60px
+      strong
+         font-weight: 600
+         font-size: 24px
+         line-height: 22px
+         color: #201D1E
+   &__position
+      position: absolute
+      top: 30px
+      right: 30px
+      cursor: pointer
+      fill: #D7D7D7
+      width: 17px
+      height: 20px
+   &__inner 
+      display: flex
+      justify-content: space-between
+      margin-bottom: 80px
+   &__oplata
+      width: 462px
+      margin-left: 20px
+      margin-top: 88px 
+      a
+         width: 100%
+         display: flex
+         align-items: center
+         justify-content: center
+         min-height: 65px
+         margin-bottom: 19px
+         background: linear-gradient(261.59deg, #F16500 0%, #FF9900 100%)
+         border-radius: 40px
+         font-weight: bold
+         font-size: 15px
+         line-height: 22px
+         color: #FFFFFF
+         transition:  0.4s
+         &:hover 
+            background: linear-gradient(261.59deg, #F88A3B 0%, #FFB950 100%)
+         svg 
+            margin-left: 7px
+            width: 24px
+            height: 24px
+      p 
+         font-weight: normal
+         font-size: 12px
+         line-height: 26px
+         color: #A0979A
+         text-align: center
+   &__order
+      display: flex
+      justify-content: space-between
+      font-weight: 600
+      font-size: 30px
+      line-height: 36px
+      color: #201D1E
+      margin-bottom: 23px
+      span 
+         font-weight: normal
+         font-size: 30px
+         line-height: 36px
+         color: #EA690C
+   &__summa
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-weight: normal
+      color: #201D1E
+      margin-bottom: 19px
+      span 
+         font-weight: bold
+         font-size: 18px
+         line-height: 18px
+         color: #201D1E
+   &__skidka
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-weight: normal
+      color: #201D1E
+      margin-bottom: 26px
+      span 
+         font-weight: 500
+         font-size: 18px
+         line-height: 18px
+         color: #E32F45
+   &__border-dotted
+      border-top: 5px dotted #EDEDED
+      margin-bottom: 34px
+   &__itog
+      font-weight: normal
+      font-size: 30px
+      line-height: 18px
+      color: #201D1E
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 32px
+      span 
+         font-weight: bold
+         font-size: 30px
+         line-height: 18px
+         color: #201D1E
+   

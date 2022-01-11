@@ -1,0 +1,150 @@
+.ordering.title
+   .container 
+      .cards__border-top
+      include ../breadcrumbs/breadcrumbs
+      h3 Оформление заказа
+      form(action="#")  
+         .ordering__dostavka 
+            .ordering__inner-btn.js__ordering-innerbtn
+               .ordering__btn.js__ordering-btn.active  
+                  +icon('ordering__dostavka')  
+                  |Доставка по адресу
+               .ordering__btn.js__ordering-btn
+                  +icon('ordering__map')
+                  |Заберу самостоятельно
+            .ordering__tabs-content.js__ordering-body
+               .ordering__tabs-contentitems.js__ordering-item.active
+                  .ordering__dostavka-grid 
+                     h4 Контактные данные
+                     label.ordering__column2 Данные получателя
+                        input(type="text" placeholder="Ваше имя *")
+                     input.ordering__column3(type="text" placeholder="Ваш телефон *")
+                     .ordering__border
+                     label.ordering__column4 Адрес доставки
+                        input(type="text" placeholder="Улица")
+                     input.ordering__column5(type="text" placeholder="Дом")
+                     input.ordering__column6(type="text" placeholder="Подъезд")
+                     input.ordering__column5(type="text" placeholder="Этаж")
+                     input.ordering__column6(type="text" placeholder="Квартира")
+                     .ordering__border 
+                     label.ordering__column4 Время доставки
+                     .select.ordering__column2
+                        <div class="select__trigger">
+                           +icon('ordering__time', 'ordering__time')
+                           <span>Сегодня ~11:30 (30 мин)</span>
+                           <div class="select__arrow">
+                              +icon('ordering__arrow')
+                           </div>
+                        </div>
+                        <div class="select__drop">
+                           <ul class="select__list select__scroll">
+                              <li>
+                                 <input id="select_0" type="radio" name="select" />
+                                 <label for="select_0">Сегодня: 30 мин ко времени
+                                    +icon('ordering__check')
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     .ordering__border
+                     label.ordering__column4 Оплата
+                     input.ordering__radio-input(type="radio" name="radio")#radio
+                     label.ordering__column5(for="radio").ordering__radio-title
+                        |Наличными
+                        |курьеру
+                        span При получении заказа
+                     input.ordering__radio-input(type="radio" name="radio")#radio2
+                     label.ordering__column6(for="radio2").ordering__radio-title
+                        |Картой курьеру
+                        span Картами Visa, MasterCard, Мир
+                     input.ordering__radio-input(type="radio" name="radio")#radio3
+                     label.ordering__column5(for="radio3").ordering__radio-title
+                        |Картой на сайте
+                        span Картами Visa, MasterCard, Мир
+                     input.ordering__radio-input(type="radio" name="radio")#radio4
+                     label.ordering__column6(for="radio4").ordering__radio-title
+                        |При самовывозе
+                        span Оплата в магазине
+                     .ordering__border
+                     label.ordering__column4 Комментарий
+                     textarea.ordering__column4          
+               .ordering__tabs-contentitems.js__ordering-item
+                  .ordering__dostavka-grid 
+                     h4 Контактные данные
+                     label.ordering__column2 Данные получателя
+                        input(type="text" placeholder="Ваше имя *")
+                     input.ordering__column3(type="text" placeholder="Ваш телефон *")
+                     .ordering__border
+
+                     label.ordering__column4 Адрес самовывоза
+                     .select.ordering__myself.ordering__column4
+                        <div class="select__trigger">
+                           <span>Не выбрано</span>
+                           <div class="select__arrow">
+                              +icon('ordering__arrow')
+                           </div>
+                        </div>
+                        <div class="select__drop">
+                           <ul class="select__list select__scroll">
+                              <li>
+                                 <input id="select" type="radio" name="select" />
+                                 <label for="select">мкр. ТУСМ-4, вл. 7 , стр. 1
+                                    +icon('ordering__check')
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     .ordering__map.ordering__column4.js__address-map
+                     .ordering__border
+                     label.ordering__column4 Оплата
+                     input.ordering__radio-input(type="radio" name="radio")#radio5
+                     label.ordering__column5(for="radio5").ordering__radio-title
+                        |Наличными
+                        |курьеру
+                        span При получении заказа
+                     input.ordering__radio-input(type="radio" name="radio")#radio6
+                     label.ordering__column6(for="radio6").ordering__radio-title
+                        |Картой курьеру
+                        span Картами Visa, MasterCard, Мир
+                     input.ordering__radio-input(type="radio" name="radio")#radio7
+                     label.ordering__column5(for="radio7").ordering__radio-title
+                        |Картой на сайте
+                        span Картами Visa, MasterCard, Мир
+                     input.ordering__radio-input(type="radio" name="radio")#radio8
+                     label.ordering__column6(for="radio8").ordering__radio-title
+                        |При самовывозе
+                        span Оплата в магазине
+                     .ordering__border
+                     label.ordering__column4 Комментарий
+                     textarea.ordering__column4       
+         .ordering__arrange
+            .ordering__bludo 
+               |Ваш заказ
+               span 5 блюд
+            .ordering__menu 
+               strong 
+                  |Филадельфия с креветкой
+                  span 280 г 
+                     span 10 роллов
+               .ordering__summa 
+                  |650 ₽
+                  span 650 ₽
+            .ordering__menu 
+               strong 
+                  |Филадельфия с креветкой
+                  span 280 г 
+                     span 10 роллов
+               .ordering__summa 
+                  |650 ₽
+                  span 650 ₽
+            .ordering__itogo 
+               |Итого
+               strong 4 390 ₽
+            button(type="submit")  
+               |Подтвердить заказ
+               +icon('basket__arrows')
+            input.ordering__checkbox-input(type="checkbox")#checkbox
+            label(for="checkbox").ordering__checkbox-title
+               |Нажимая на кнопку «Подтвердить заказ, я даю согласие на 
+               |обработку 
+               a(href="#")  персональных данных

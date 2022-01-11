@@ -40,6 +40,16 @@
      flex: 0 0 auto
 
 @media (max-width:1150px) 
+   .ordering__column2,
+   .ordering__column3
+      grid-column: 1/5
+      margin-top: 0px
+   .ordering__column5
+      grid-column: 1/3
+      margin-bottom: 10px
+   .ordering__column6
+      grid-column: 3/5
+      margin-bottom: 10px
    .cards__polosa 
       width: 794px
    .address__info
@@ -87,6 +97,14 @@
       width: 100%
 
 @media (max-width: 991px) 
+   .basket__inner
+      flex-direction: column
+   .basket__tovar
+      width: 100%
+   .basket__oplata
+      width: 100%
+      margin-left: 0px
+      margin-top: 50px
    .cards__tovar > img 
     width: 300px
    .address__info
@@ -131,6 +149,17 @@
       margin-bottom: 10px
       img
          width: 100%
+
+@media (max-width: 850px)
+     .ordering form
+        flex-direction: column
+     .ordering__dostavka
+        width: 100%
+        margin-right: 0px
+        margin-bottom: 50px
+     .ordering__arrange
+        width: 100%
+
 @media (max-width: 768px) 
    .cards__tovar
       flex-direction: column
@@ -186,7 +215,27 @@
       display: flex
       grid-gap: 0px
    
+@media (max-width: 600px) 
+    .basket__border,
+    .basket__number
+       flex-direction: column
+    .basket__number
+       align-items: flex-start
+       span 
+          margin-right: 0px
+          margin-bottom: 10px
+    .basket__price span
+       margin-right: 13px
+    .basket__position 
+       top: 17px
+       right: 11px
+
 @media (max-width: 500px) 
+   .ordering__column5,
+   .ordering__column6
+      grid-column: 1/5
+   .ordering__tabs-content
+      padding: 20px
    .cards__swiper-button-prev, 
    .cards__swiper-button-next
       width: 40px
