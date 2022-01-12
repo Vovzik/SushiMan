@@ -1,0 +1,14 @@
+extends base/pug/base
+
+append variables
+    - var title = 'О компании'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+
+block header
+    include ./components/header/header
+block content
+    //- Подключать тут
+    include ./components/company/company
+block footer  
+    include ./components/footer/footer

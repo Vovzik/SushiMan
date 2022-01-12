@@ -17,15 +17,27 @@
                   .ordering__dostavka-grid 
                      h4 Контактные данные
                      label.ordering__column2 Данные получателя
-                        input(type="text" placeholder="Ваше имя *")
-                     input.ordering__column3(type="text" placeholder="Ваш телефон *")
+                        input.js__ordering-value(type="text" placeholder="Ваше имя *")
+                        p.js__ordering-error Поле имя не заполнено
+                     .ordering__error-relative.ordering__column3
+                        input.js__ordering-value(type="text" placeholder="Ваш телефон *")
+                        p.js__ordering-error Поле телефона не заполнено
                      .ordering__border
                      label.ordering__column4 Адрес доставки
-                        input(type="text" placeholder="Улица")
-                     input.ordering__column5(type="text" placeholder="Дом")
-                     input.ordering__column6(type="text" placeholder="Подъезд")
-                     input.ordering__column5(type="text" placeholder="Этаж")
-                     input.ordering__column6(type="text" placeholder="Квартира")
+                        input.js__ordering-value0(type="text" placeholder="Улица")
+                        p.js__ordering-error0 Поле улица не заполнено
+                     .ordering__error-relative.ordering__column5
+                        input.js__ordering-value0(type="text" placeholder="Дом")
+                        p.js__ordering-error0 Поле дом не заполнено
+                     .ordering__error-relative.ordering__column6
+                        input.js__ordering-value0(type="text" placeholder="Подъезд")
+                        p.js__ordering-error0 Поле не заполнено
+                     .ordering__error-relative.ordering__column5
+                        input.js__ordering-value0(type="text" placeholder="Этаж")
+                        p.js__ordering-error0 Поле этаж не заполнено
+                     .ordering__error-relative.ordering__column6
+                        input.js__ordering-value0(type="text" placeholder="Квартира")
+                        p.js__ordering-error0 Поле не заполнено
                      .ordering__border 
                      label.ordering__column4 Время доставки
                      .select.ordering__column2
@@ -40,8 +52,13 @@
                            <ul class="select__list select__scroll">
                               <li>
                                  <input id="select_0" type="radio" name="select" />
-                                 <label for="select_0">Сегодня: 30 мин ко времени
-                                    +icon('ordering__check')
+                                 <label for="select_0">Сегодня: 30 мин 
+                                    img(src="images/popup__check.webp", alt="alt")
+                                 </label>
+                              </li>
+                               <li data-modal="#popup" class="js__popup-link">
+                                 <input id="select_1" type="radio" name="select" />
+                                 <label for="select_1"> ко времени
                                  </label>
                               </li>
                            </ul>
@@ -72,8 +89,11 @@
                   .ordering__dostavka-grid 
                      h4 Контактные данные
                      label.ordering__column2 Данные получателя
-                        input(type="text" placeholder="Ваше имя *")
-                     input.ordering__column3(type="text" placeholder="Ваш телефон *")
+                        input.js__ordering-value2(type="text" placeholder="Ваше имя *")
+                        p.js__ordering-error2 Поле имя не заполнено
+                     .ordering__error-relative.ordering__column3
+                        input.js__ordering-value2(type="text" placeholder="Ваш телефон *")
+                        p.js__ordering-error2 Поле телефона не заполнено
                      .ordering__border
 
                      label.ordering__column4 Адрес самовывоза

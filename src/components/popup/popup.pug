@@ -1,0 +1,38 @@
+div.popup.title.js__popup-open(data-popup="#popup")
+   .popup__body
+      .popup__content.js__popup-content
+         .popup__close.js__popup-close
+             img(src="images/popup__close.webp", alt="alt")
+         h2 Время доставки
+         .popup__inner-btn.js__popup-innerbtn
+                .popup__btn.js__popup-btn.active  Сегодня
+                .popup__btn.js__popup-btn   Завтра
+         .popup__tabs-content.js__popup-body
+                .popup__tabs-contentitems.js__popup-item.active
+                      input.popup__radio-input(type="radio" name="popup" checked)#popup
+                      label(for="popup").popup__radio-title Сегодня: 30 мин
+                      input.popup__radio-input(type="radio" name="popup")#popup2
+                      label(for="popup2").popup__radio-title 17:00
+                      input.popup__radio-input(type="radio" name="popup")#popup3
+                      label(for="popup3").popup__radio-title 17:30
+                      input.popup__radio-input(type="radio" name="popup")#popup4
+                      label(for="popup4").popup__radio-title 18:00
+                      input.popup__radio-input(type="radio" name="popup")#popup5
+                      label(for="popup5").popup__radio-title 18:30
+                      input.popup__radio-input(type="radio" name="popup")#popup6
+                      label(for="popup6").popup__radio-title 19:00                           
+                .popup__tabs-contentitems.js__popup-item 2
+         button.js__popup-link(type="submit" data-modal="#popup2") 
+            |Выбрать
+
+div.popup.title.js__popup-open(data-popup="#popup2")
+   .popup__body
+      .popup__content.padding.js__popup-content
+         .popup__close.js__popup-close
+             img(src="images/popup__close.webp", alt="alt")
+         img(src="images/popup__yes.webp", alt="alt")
+       
+           
+  
+
+

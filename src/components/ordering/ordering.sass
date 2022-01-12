@@ -57,6 +57,9 @@
    &__column3
       grid-column: 3/5
       margin-top: 37px
+   &__column3 p.js__ordering-error,
+   &__column3 p.js__ordering-error2
+      bottom: 6px
    &__border,
    &__column4
       grid-column: 1/5
@@ -66,9 +69,30 @@
       font-size: 16px
       line-height: 22px
       color: #201D1E
-      margin-bottom: 15px
+      margin-bottom: 31px
+      position: relative
+   .js__ordering-error,
+   .js__ordering-error0,
+   .js__ordering-error2
+      position: absolute
+      left: 0px
+      bottom: -24px
+      font-weight: normal
+      font-size: 12px
+      line-height: 22px
+      color: #E32F45
+      display: none
+   &__error-relative
+      position: relative
+   .js__ordering-error.error,
+   .js__ordering-error0.error,
+   .js__ordering-error2.error
+      display: block
+      
+
    &__dostavka-grid > input,
-   &__dostavka-grid > textarea
+   &__dostavka-grid > textarea,
+   &__error-relative > input 
       width: 100%
       background: #F9F9F9
       border: 1px solid #EDEDED
@@ -79,6 +103,11 @@
       font-size: 14px
       line-height: 22px
       color: #201D1E
+      transition: all 0.4s ease
+      &:hover 
+         background: #fff
+      &.open
+         border: 1px solid red
       &::placeholder
          color: #A0979A
          font-weight: normal
@@ -99,6 +128,11 @@
       line-height: 22px
       color: #201D1E
       margin-top: 15px
+      transition: all 0.4s ease
+      &:hover 
+         background: #fff
+      &.open
+         border: 1px solid red
       &::placeholder
          color: #A0979A
          font-weight: normal
@@ -193,6 +227,9 @@
      color: #201D1E 
    .select__list input 
      display: none
+   .select__list li 
+     &:not(:last-child)
+         margin-bottom: 10px
    .select__list label 
      display: block
      padding: 0px 25px
@@ -202,7 +239,7 @@
      cursor: pointer
      transition: 0.3s
      position: relative
-     svg 
+     img
         width: 17px
         height: 12px
         position: absolute
