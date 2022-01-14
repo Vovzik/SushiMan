@@ -6,10 +6,12 @@
       form(action="#")  
          .ordering__dostavka 
             .ordering__inner-btn.js__ordering-innerbtn
-               .ordering__btn.js__ordering-btn.active  
+               input(type="radio" name="ordering")#ordering
+               label.ordering__btn.js__ordering-btn.active(for="ordering")  
                   +icon('ordering__dostavka')  
                   |Доставка по адресу
-               .ordering__btn.js__ordering-btn
+               input(type="radio" name="ordering")#ordering2
+               label.ordering__btn.js__ordering-btn(for="ordering2")
                   +icon('ordering__map')
                   |Заберу самостоятельно
             .ordering__tabs-content.js__ordering-body
@@ -20,7 +22,7 @@
                         input.js__ordering-value(type="text" placeholder="Ваше имя *")
                         p.js__ordering-error Поле имя не заполнено
                      .ordering__error-relative.ordering__column3
-                        input.js__ordering-value(type="text" placeholder="Ваш телефон *")
+                        input.js__ordering-value.phone(type="text" placeholder="Ваш телефон *")
                         p.js__ordering-error Поле телефона не заполнено
                      .ordering__border
                      label.ordering__column4 Адрес доставки
@@ -92,7 +94,7 @@
                         input.js__ordering-value2(type="text" placeholder="Ваше имя *")
                         p.js__ordering-error2 Поле имя не заполнено
                      .ordering__error-relative.ordering__column3
-                        input.js__ordering-value2(type="text" placeholder="Ваш телефон *")
+                        input.js__ordering-value2.phone(type="text" placeholder="Ваш телефон *")
                         p.js__ordering-error2 Поле телефона не заполнено
                      .ordering__border
 
@@ -143,7 +145,7 @@
                span 5 блюд
             .ordering__menu 
                strong 
-                  |Филадельфия с креветкой
+                  |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae reiciendis error, rem fugiat, enim earum quibusdam eos consectetur ea tenetur autem necessitatibus cupiditate adipisci minus ad consequatur iste sed quam!
                   span 280 г 
                      span 10 роллов
                .ordering__summa 

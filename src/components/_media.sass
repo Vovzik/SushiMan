@@ -23,6 +23,8 @@
       margin-right: 20px
 
 @media (max-width:1350px)
+  .cards__price 
+     max-width: 158px
   .company section > div 
      width: 800px
   .cards__price
@@ -30,7 +32,7 @@
      align-items: flex-start
      strong
         margin-right: 0px
-        margin-bottom: 20px
+        margin-bottom: 10px
   .header__role 
      display: none
   .footer__menu,
@@ -110,7 +112,7 @@
    .cards__tovar-filter
       padding: 20px
    .cards__polosa 
-      width: 762px
+      width: 747px
 
    .news__inner
       grid-template-columns: 1fr
@@ -140,6 +142,17 @@
       width: 100%
 
 @media (max-width: 991px) 
+   .cards__inner strong 
+      font-size: 28px
+   .cards__inner span 
+      font-size: 25px
+   .cards__price 
+      max-width: 99px
+   .headermodail__box
+      display: flex
+      align-items: center
+   .main
+      padding-top: 138px
    .basket__inner
       flex-direction: column
    .basket__tovar
@@ -167,6 +180,10 @@
       display: none
    .headermodail
       display: block
+      position: fixed
+      width: 100%
+      z-index: 100
+      background: #fff
    .footer__information 
       width: 144px
    .slider__inner
@@ -203,7 +220,15 @@
      .ordering__arrange
         width: 100%
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
+   .cards__price 
+      max-width: 186px
+   .cards__images-tovar img
+      border-radius: 20px
+   .address__info-item
+      width: 100%
+   .tovar__price 
+      max-width: 77px
    .cards__tovar
       flex-direction: column
    .cards__tovar > img
@@ -366,7 +391,7 @@
    .instagram__ellipse
       width: 197px
    .slider .slidermenu__swiper-container
-      margin-bottom: 60px
+      padding-bottom: 60px
    .slider .slidermenu__swiper-container .swiper-slide img
       width: 50px
    .slider .slidermenu__swiper-container .swiper-slide

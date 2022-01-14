@@ -3,7 +3,8 @@
       .cards__border-top
       include ../breadcrumbs/breadcrumbs 
       .cards__tovar 
-         img(src="images/cards__img.webp" alt="")
+         .cards__images-tovar 
+            img(src="images/cards__img.webp" alt="")
          .cards__tovar-filter 
             <svg class="cards__polosa" width="842" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 80a4.55 4.55 0 0 1 4.55-4.55h466.4a15.586 15.586 0 0 0 14.523-9.93l21.652-55.59A15.587 15.587 0 0 1 521.648 0h320.319v60c0 11.046-8.954 20-20 20H0Z" fill="url(#a)"/><defs><linearGradient id="a" x1="841.967" y1="0" x2="559.683" y2="439.487" gradientUnits="userSpaceOnUse"><stop stop-color="#F16500"/><stop offset="1" stop-color="#F90"/></linearGradient></defs></svg>
             h2  Филадельфия с креветкой
@@ -39,8 +40,8 @@
                   strong 430 ₽
             .cards__inner  
                .cards__price 
-                  strong 650 ₽
-                  span 650 ₽
+                  strong 9500 ₽
+                  span 6500 ₽
                a(href="#") 
                   +icon('tovar__basket')
                   | Добавить в корзину
@@ -194,9 +195,9 @@
                         <svg width="340" height="61" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-252 61a3.47 3.47 0 0 1 3.469-3.47h476.47a13.583 13.583 0 0 0 12.656-8.652l15.667-40.225A13.582 13.582 0 0 1 268.918 0H390v61h-642Z" fill="url(#a)"/><defs><linearGradient id="a" x1="390" y1="0" x2="174.758" y2="335.109" gradientUnits="userSpaceOnUse"><stop stop-color="#F16500"/><stop offset="1" stop-color="#F90"/></linearGradient></defs></svg>
                         +icon('tovar__basket', 'tovar__basket')
             .cards__swiper-button-prev
-               +icon('cards__prev')
+                <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 15 2 8l7-7" stroke="#EA690C" stroke-width="2"/></svg>
             .cards__swiper-button-next
-               +icon('cards__next')
+                <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 15 7-7-7-7" stroke="#EA690C" stroke-width="2"/></svg>
 
 
 

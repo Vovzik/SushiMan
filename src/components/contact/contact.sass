@@ -36,13 +36,33 @@
       align-items: center
       font-weight: 600
       font-size: 18px
+      color: #EA690C
       line-height: 25px
-      color: #201D1E
       min-height: 90px
       padding: 10px 0px
       border-bottom: 4px dotted #EDEDED
+      position: relative
+      padding-right: 23px
+      transition: all 0.4s ease
+      &.hidden 
+         color: #201D1E
+         img 
+           filter: grayscale(100%)
+      svg 
+         position: absolute
+         right: 0px
+         opacity: 0
+         visibility: hidden
+         transition: all 0.4s ease
+      &.hidden:hover svg 
+         opacity: 1
+         visibility: visible
+      &.hidden:hover img
+         opacity: 0.4
+         filter: grayscale(0%)
       img
          margin-right: 20px
+         transition: all 0.4s ease
    &__phone.margin
        margin-bottom: 0px
        padding-bottom: 50px

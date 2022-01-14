@@ -27,7 +27,7 @@ function init() {
 		place = new ymaps.Placemark(pointer[i], {}, {
 		  iconLayout: 'default#image',
 		  iconImageHref: './images/marker.webp',
-		  iconImageSize: [60, 61],
+		  iconImageSize: [60, 65],
 		  iconImageOffset: [-35, -80]
 		  });
 		myMap.geoObjects.add(place);
@@ -42,3 +42,20 @@ function init() {
 	 myMap.controls.remove('rulerControl'); // удаляем контрол правил
 	 myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 };
+
+
+function address() {
+	const js__addressClick = document.querySelectorAll('.js__address-click');
+	
+	for (let i = 0; i < js__addressClick.length; i++) {
+	  if(js__addressClick[i]) {
+		js__addressClick[i].addEventListener('click', () => {
+			document.querySelectorAll('.app-actions').forEach((Element => Element.classList.add('hidden')));
+			document.querySelectorAll('[data-scene="preparation"]')[i].classList.remove('hidden'); 
+		 })
+	  }
+	}
+	
+}
+
+address();

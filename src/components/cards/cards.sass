@@ -22,6 +22,7 @@
       border-radius: 0px 20px 20px 0px
       width: 720px
       position: relative
+      overflow: hidden
    &__tovar-filter > strong 
       display: block
       font-weight: 600
@@ -73,6 +74,8 @@
       align-items: center
       position: relative
       z-index: 2
+      max-width: 240px
+      flex-wrap: wrap
    &__inner
       display: flex
       align-items: flex-end
@@ -81,9 +84,10 @@
       strong
          font-weight: 600
          font-size: 42px
-         line-height: 22px
+         line-height: 30px
          color: #201D1E
          margin-right: 24px
+         margin-bottom: 7px
       span 
          position: relative
          font-weight: normal
@@ -97,7 +101,7 @@
             left: 50%
             transform: translate(-50%, -50%)
             border-top: 2px solid #E32F45
-            width: 110px
+            width: 102%
       a
          display: flex
          align-items: center
@@ -149,10 +153,6 @@
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
       z-index: 2
       cursor: pointer
-      svg 
-         width: 7px
-         height: 14px
-         fill: #EA690C
    &__swiper-button-next
       right: -25px
    &__swiper-button-prev
@@ -165,6 +165,16 @@
    &__border-top
       border-top: 1px solid #EDEDED
       margin-bottom: 31px
+   &__images-tovar
+      border-radius: 20px 0px 0px 20px
+      overflow: hidden
+   &__images-tovar img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+      position: relative
+      z-index: 2
 
 
 

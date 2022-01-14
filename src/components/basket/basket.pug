@@ -20,10 +20,15 @@
                         span Количество:
                         .basket__value
                            button.js__basket-minus(type="button")
-                             +icon('basket__minus')
+                             <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M0.400391 1H11.6004" stroke="#EA690C" stroke-width="2"/>
+                             </svg>
                            input.js__basket-value(type="number" name="field" value="1") 
                            button.js__basket-plus(type="button")
-                             +icon('basket__plus')
+                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M0 6H6M12 6H6M6 6V0V12" stroke="#EA690C" stroke-width="2"/>
+                             </svg>
+
                      .basket__price 
                         span 650 ₽
                         strong 650 ₽
@@ -116,9 +121,11 @@
                               |Филадельфия с креветкой
                         p Рис, нори, лосось, креветка, 
                            |крем-сыр, огурец
+                           |Рис, нори, лосось, креветка, 
+                           |крем-сыр, огурец
                         .tovar__price 
-                           strong 650 ₽
-                           span 650 ₽
+                           strong 6500 ₽
+                           span 8500 ₽
                         <svg width="340" height="61" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-252 61a3.47 3.47 0 0 1 3.469-3.47h476.47a13.583 13.583 0 0 0 12.656-8.652l15.667-40.225A13.582 13.582 0 0 1 268.918 0H390v61h-642Z" fill="url(#a)"/><defs><linearGradient id="a" x1="390" y1="0" x2="174.758" y2="335.109" gradientUnits="userSpaceOnUse"><stop stop-color="#F16500"/><stop offset="1" stop-color="#F90"/></linearGradient></defs></svg>
                         +icon('tovar__basket', 'tovar__basket')
                   .swiper-slide.tovar__item 
@@ -248,9 +255,9 @@
                         <svg width="340" height="61" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-252 61a3.47 3.47 0 0 1 3.469-3.47h476.47a13.583 13.583 0 0 0 12.656-8.652l15.667-40.225A13.582 13.582 0 0 1 268.918 0H390v61h-642Z" fill="url(#a)"/><defs><linearGradient id="a" x1="390" y1="0" x2="174.758" y2="335.109" gradientUnits="userSpaceOnUse"><stop stop-color="#F16500"/><stop offset="1" stop-color="#F90"/></linearGradient></defs></svg>
                         +icon('tovar__basket', 'tovar__basket')
             .cards__swiper-button-prev
-               +icon('cards__prev')
+               <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 15 2 8l7-7" stroke="#EA690C" stroke-width="2"/></svg>
             .cards__swiper-button-next
-               +icon('cards__next')
+               <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 15 7-7-7-7" stroke="#EA690C" stroke-width="2"/></svg>
 
     
               

@@ -80,6 +80,8 @@ function validation() {
   for (let i = 0; i < js__orderingValue.length; i++) {
     js__orderingValue[i].addEventListener('input', () => {
       value3()
+      console.log(js__orderingValue[1].value);
+      
     });
   }
 
@@ -106,10 +108,8 @@ function validation() {
     }
 
     if(value2()) {
-      console.log(true);
       /* можно отправлять */
     } else {
-      console.log(false)
     }
   });
 
@@ -118,9 +118,12 @@ function validation() {
       if (js__orderingValue[i].value.length > 3) {
         error = 0
         removeError(js__orderingeError[i])
+        console.log(true);
+        
       } else {
         error++
         addError(js__orderingeError[i])
+        console.log(false);
       }
     }
 
@@ -176,4 +179,16 @@ function validation() {
   
 }
 
+
+
+
+function maska() {
+  /*Маска для инпута*/
+  $(function(){
+    $(".phone").mask("8(999) 999-9999");
+  });
+  
+}
+
+maska()
 validation()

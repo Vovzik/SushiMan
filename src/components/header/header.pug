@@ -1,119 +1,120 @@
 header.header
-   .header__top
-       .container
-          .header__top-inner 
-             a.header__logo(href="/")
-                 img(src="images/header__logo.webp", alt="alt")
-             span.header__role Вкусные и свежие роллы 
-                  |по приемлемым ценам!
-             nav
-               ul 
-                   li
-                       a(href="#") Акции
-                   li
-                       a(href="#") О нас
-                   li
-                       a(href="#") Доставка
-                   li
-                       a(href="#") Контакты
-             strong 
-               span Принимаем заказы
-               |с 11:00 до 22:30 
-             a.header__instagram(href="#") 
-                 +icon('header__instagram')
-                 |Instagram
-             a.header__phone(href="tel:577-755")
-                 .header__elipse
-                    +icon('header__phone')
-                 |577-755
-             a.header__basket(href="#") 
-               span.header__cards 
-                +icon('header__basket')
-                |Корзина
-               span 2 110 руб.
-   .header__content
-       .container
-          nav
-              ul
-                  li
-                      a(href="#") Холодные роллы
-                  li
-                      a(href="#") Запеченные роллы
-                  li
-                      a(href="#") Жареные роллы
-                  li
-                      a(href="#") Сеты
-                  li
-                      a(href="#") Пицца
-                  li
-                      a(href="#") Закуски
-                  li
-                      a(href="#") Соусы
+    .header__top
+        .container
+            .header__top-inner 
+                a.header__logo(href="/")
+                    img(src="images/header__logo.webp" alt="alt")
+                span.header__role Вкусные и свежие роллы 
+                    |по приемлемым ценам!
+                nav
+                    ul 
+                        li
+                            a(href="#") Акции
+                        li
+                            a(href="#") О нас
+                        li
+                            a(href="#") Доставка
+                        li
+                            a(href="#") Контакты
+                strong 
+                    span Принимаем заказы
+                    |с 11:00 до 22:30 
+                a.header__instagram(href="#") 
+                    +icon('header__instagram')
+                    |Instagram
+                a.header__phone(href="tel:577-755")
+                    .header__elipse
+                        +icon('header__phone')
+                    |577-755
+                a.header__basket(href="#") 
+                    span.header__cards 
+                        +icon('header__basket')
+                        |Корзина
+                    span 2 110 руб.
+    .header__content
+        .container
+            nav
+                ul
+                    li
+                        a(href="#") Холодные роллы
+                    li
+                        a(href="#") Запеченные роллы
+                    li
+                        a(href="#") Жареные роллы
+                    li
+                        a(href="#") Сеты
+                    li
+                        a(href="#") Пицца
+                    li
+                        a(href="#") Закуски
+                    li
+                        a(href="#") Соусы
 header.headermodail 
-   .container
-    .headermodail__inner
-     a.headermodail__logo(href="/")
-         img(src="images/headermodail__logo.webp", alt="alt")
-     a.headermodail__phone(href="#") 
-        +icon('headermodail__phone')
-     a.headermodail__basket(href="#") 
-        +icon('headermodail__basket')
-        span 2 110р.
-     .headermodail__burger.js__header-burger
-        .headermodail__burger-polosa1.js__header-burgerpolosa1
-        .headermodail__burger-polosa.js__header-burgerpolosa
-        .headermodail__burger-polosa3.js__header-burgerpolosa3 
-    .headermodail__menu-open.js__menu-headermodail
-     nav
-         ul  
-             li
-                 a(href="#") Акции
-             li
-                 a(href="#") О нас
-             li
-                 a(href="#") Доставка
-             li
-                 a(href="#") Контакты
-     strong 
-       span Принимаем заказы 
-       |с 11:00 до 22:30
-     a.headermodail__instagram(href="#") 
-      +icon('headermodail__instagram')
-      |Instagram
-     div 
-      a.headermodail__phonebottom(href="tel:577-755") 
-       span 
-         +icon('headermodail__menuphone')
-       |577-755
-    div.headermodail__link.js__header-burger
-      .headermodail__burger
-        .headermodail__burger-polosa1.js__header-burgerpolosa1
-        .headermodail__burger-polosa.js__header-burgerpolosa
-        .headermodail__burger-polosa3.js__header-burgerpolosa3 
-      div.js__headermodail-text Открыть меню
-    .headermodail__link-open.js__menu-headermodail
-         .headermodail__items 
-             a.headermodail__item(href="#")
-                img(src="images/headermodail__item.webp", alt="alt")
-                strong Холодные
-                span  роллы
-             a.headermodail__item(href="#")
-                img(src="images/headermodail__item2.webp", alt="alt")
-                strong Запеченные
-                span  роллы
-             a.headermodail__item(href="#")
-                img(src="images/headermodail__item3.webp", alt="alt")
-                strong Жареные
-                span  роллы
-             a.headermodail__item(href="#")
-                img(src="images/headermodail__item4.webp", alt="alt")
-                strong Сеты
-             a.headermodail__item(href="#")
-                img(src="images/headermodail__item5.webp", alt="alt")
-                strong Пицца
-             a.headermodail__item(href="#")
-                img(src="images/headermodail__item6.webp", alt="alt")
-                strong Закуски
-             a.headermodail__item(href="#")
-                img(src="images/headermodail__item7.webp", alt="alt")
+    .container
+        .headermodail__inner
+            a.headermodail__logo(href="/")
+                img(src="images/headermodail__logo.webp" alt="alt")
+            .headermodail__box
+              a.headermodail__phone(href="#") 
+                  +icon('headermodail__phone')
+              a.headermodail__basket(href="#") 
+                  +icon('headermodail__basket')
+                  span 2 110р.
+              .headermodail__burger.js__header-burger
+                  .headermodail__burger-polosa1.js__header-burgerpolosa1
+                  .headermodail__burger-polosa.js__header-burgerpolosa
+                  .headermodail__burger-polosa3.js__header-burgerpolosa3 
+        .headermodail__menu-open.js__menu-headermodail
+            nav
+                ul  
+                    li
+                        a(href="#") Акции
+                    li
+                        a(href="#") О нас
+                    li
+                        a(href="#") Доставка
+                    li
+                        a(href="#") Контакты
+            strong 
+                span Принимаем заказы 
+                |с 11:00 до 22:30
+            a.headermodail__instagram(href="#") 
+                +icon('headermodail__instagram')
+                |Instagram
+            div 
+                a.headermodail__phonebottom(href="tel:577-755") 
+                    span 
+                        +icon('headermodail__menuphone')
+                    |577-755
+        div.headermodail__link.js__header-burger
+            .headermodail__burger
+                .headermodail__burger-polosa1.js__header-burgerpolosa1
+                .headermodail__burger-polosa.js__header-burgerpolosa
+                .headermodail__burger-polosa3.js__header-burgerpolosa3 
+            div.js__headermodail-text Открыть меню
+        .headermodail__link-open.js__menu-headermodail
+            .headermodail__items 
+                a.headermodail__item(href="#")
+                    img(src="images/headermodail__item.webp" alt="alt")
+                    strong Холодные
+                    span  роллы
+                a.headermodail__item(href="#")
+                    img(src="images/headermodail__item2.webp" alt="alt")
+                    strong Запеченные
+                    span  роллы
+                a.headermodail__item(href="#")
+                    img(src="images/headermodail__item3.webp" alt="alt")
+                    strong Жареные
+                    span  роллы
+                a.headermodail__item(href="#")
+                    img(src="images/headermodail__item4.webp" alt="alt")
+                    strong Сеты
+                a.headermodail__item(href="#")
+                    img(src="images/headermodail__item5.webp" alt="alt")
+                    strong Пицца
+                a.headermodail__item(href="#")
+                    img(src="images/headermodail__item6.webp" alt="alt")
+                    strong Закуски
+            a.headermodail__item.single(href="#")
+                img(src="images/headermodail__item7.webp" alt="alt")
                 strong Соусы
